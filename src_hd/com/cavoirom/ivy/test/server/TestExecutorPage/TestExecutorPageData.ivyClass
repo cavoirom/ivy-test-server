@@ -1,0 +1,8 @@
+TestExecutorPageData #class
+com.cavoirom.ivy.test.server.TestExecutorPage #namespace
+testResult String #field
+testResult PERSISTENT #fieldModifier
+testClassPath String #field
+testClassPath PERSISTENT #fieldModifier
+moduleName String #field
+moduleName PERSISTENT #fieldModifier

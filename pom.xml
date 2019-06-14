@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.cavoirom.ivy</groupId>
+  <artifactId>ivy-test-server</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>iar</packaging>
+
+  <organization>
+    <name>cavoirom</name>
+  </organization>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.cavoirom.ivy</groupId>
+      <artifactId>ivy-test-runner</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-compile-dependencies</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/lib/compile</outputDirectory>
+              <stripVersion>true</stripVersion>
+              <includeArtifactIds>
+                junit,
+                ivy-test-runner
+              </includeArtifactIds>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.axonivy.ivy.ci</groupId>
+        <artifactId>project-build-plugin</artifactId>
+        <version>7.0.1</version>
+        <extensions>true</extensions>
+        <configuration>
+          <ivyVersion>7.0.8</ivyVersion>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

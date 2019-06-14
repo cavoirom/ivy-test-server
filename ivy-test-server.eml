@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="ivy-test-runner.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/ivy-test-runner.jar!/"/>
+	</lib>
+	<lib name="junit.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/junit.jar!/"/>
+	</lib>
+	<levels>
+		<level name="junit" value="project"/>
+		<level name="ivy-test-runner" value="project"/>
+	</levels>
+</component>

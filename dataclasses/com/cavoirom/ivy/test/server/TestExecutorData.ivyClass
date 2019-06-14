@@ -1,0 +1,4 @@
+TestExecutorData #class
+com.cavoirom.ivy.test.server #namespace
+testClassPath String #field
+moduleName String #field

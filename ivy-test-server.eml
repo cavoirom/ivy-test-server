@@ -2,13 +2,16 @@
 <component inheritJdk="true">
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
-	<lib name="ivy-test-runner.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/ivy-test-runner.jar!/"/>
+	<lib name="hamcrest-core.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/hamcrest-core.jar!/"/>
+	</lib>
+	<lib name="maven-model.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/maven-model.jar!/"/>
 	</lib>
 	<lib name="junit.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/junit.jar!/"/>
 	</lib>
-	<lib name="hamcrest-core.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/hamcrest-core.jar!/"/>
+	<lib name="ivy-test-runner.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/ivy-test-runner.jar!/"/>
 	</lib>
 </component>

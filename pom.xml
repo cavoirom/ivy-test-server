@@ -37,6 +37,7 @@
               <stripVersion>true</stripVersion>
               <includeArtifactIds>
                 junit,
+                hamcrest-core,
                 ivy-test-runner
               </includeArtifactIds>
             </configuration>

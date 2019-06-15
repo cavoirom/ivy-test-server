@@ -8,8 +8,7 @@
 	<lib name="junit.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/junit.jar!/"/>
 	</lib>
-	<levels>
-		<level name="junit" value="project"/>
-		<level name="ivy-test-runner" value="project"/>
-	</levels>
+	<lib name="hamcrest-core.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/ivy-test-server/lib/compile/hamcrest-core.jar!/"/>
+	</lib>
 </component>

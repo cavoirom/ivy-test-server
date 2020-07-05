@@ -11,9 +11,6 @@
 	<classpathentry kind="con" path="WEBAPP_CONTAINER"/>
 	<classpathentry kind="con" path="ULC_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="lib" path="lib/compile/hamcrest-core.jar"/>
-	<classpathentry kind="lib" path="lib/compile/maven-model.jar"/>
-	<classpathentry kind="lib" path="lib/compile/junit.jar"/>
 	<classpathentry kind="lib" path="lib/compile/ivy-test-runner.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>

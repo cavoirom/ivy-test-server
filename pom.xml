@@ -36,9 +36,6 @@
               <outputDirectory>${basedir}/lib/compile</outputDirectory>
               <stripVersion>true</stripVersion>
               <includeArtifactIds>
-                maven-model,
-                junit,
-                hamcrest-core,
                 ivy-test-runner
               </includeArtifactIds>
             </configuration>
